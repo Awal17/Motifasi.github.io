@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeshop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!----------boxicons cdn---------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!----------header----------->
+
+    
+
+        
+            
+
+            
+            
+                
+
+                <i class='bx bxs-shopping-bag cart' onclick="openCart()"></i>
+            </div>
+            
+            <i class='bx bx-menu menu-icon' onclick="openNav()"></i>
+           
+        </div>
+
+
+        <!----------cart-page----------->
+
+        <div class="cart-page" id="cartPage">
+
+            <div class="cart-boxes">
+                <div class="cart-item" id="cartItem1">
+                    <img src="images/coffe1.jpeg">
+                    <span class="item-details">
+                        <h2>Cold coffe + choco</h2>
+                        <p>$18.00</p>
+                    </span>
+                    <i class='bx bx-x remove-item'
+                     onclick="document.getElementById('cartItem1').style.display = 'none'"></i>
+                </div>
+
+                <div class="cart-item" id="cartItem2">
+                    <img src="images/coffe2.jpeg">
+                    <span class="item-details">
+                        <h2>Lattle coffe in cup</h2>
+                        <p>$14.99</p>
+                    </span>
+                    <i class='bx bx-x remove-item'
+                     onclick="document.getElementById('cartItem2').style.display = 'none'"></i>
+                </div>
+
+                <div class="cart-item" id="cartItem3">
+                    <img src="images/coffe3.jpeg">
+                    <span class="item-details">
+                        <h2>Iced coffe + choco</h2>
+                        <p>$19.00</p>
+                    </span>
+                    <i class='bx bx-x remove-item'
+                    onclick="document.getElementById('cartItem3').style.display = 'none'"></i>
+                </div>
+
+                <div class="cart-item" id="cartItem4">
+                    <img src="images/coffe4.jpeg">
+                    <span class="item-details">
+                        <h2>20 oz vanilla coffe</h2>
+                        <p>$21.20</p>
+                    </span>
+                    <i class='bx bx-x remove-item'
+                    onclick="document.getElementById('cartItem4').style.display = 'none'"></i>
+                </div>
+                <button class="cart-btn">Checkout Now</button>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!------the main section start here------------>
+    
+    
+    <main>
+        <div class="main-content">
+
+            <div class="texts">
+                <h1><center> NAMA: AWAL NURDIANTO</h1>
+                <h3>Start your Day with Excitement</h3>
+                <p> <b>"Kopiku memang lebih hitam dari rambutmu tetapi tidak lebih dari senyummu."
+                
+                <p><b> "Jadilah seperti kopi, yang tetap dicintai tanpa menyembunyikan pahitnya diri."
+                
+                </p>
+                <div class="buttons">
+                    <button class="order"><a href="">MY MOTIFASI</a></button>
+                    <button class="more"><a href="">STAY STRONG</a></button>
+                </div>
+                <!-------social media links---->
+
+                
+                   
+                   
+                   
+                    
+                </div>
+
+            </div>
+
+            
+
+            
+                                                               
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    
+
+
+    <script>
+
+        var menuList = document.getElementById('menuList');
+        function openNav(){
+            if(menuList.style.width == '0%'){
+                menuList.style.width = '100%';
+            }
+            else{
+                menuList.style.width = '0%';
+            }
+        }
+
+
+        var  cartPage = document.getElementById('cartPage');
+
+        function openCart(){
+            if( cartPage.style.width == '0px'){
+                cartPage.style.width = '320px';
+            }
+            else{
+                cartPage.style.width = '0px';
+            }
+        }
+
+    </script>
+</body>
+</html>
